@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment : UI/UX Developer | Appy Pie LLP |</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-side">
+                    <div class="logo"><img src="https://designimages.appypie.com/sitefiles/logo-design-dark.svg" alt=""></div>
+                <select id="template-type">
+                    <option value="photos">Templates</option>
+                    <option value="videos">Templates2</option>
+                    <option value="videos">Templates3</option>
+                    <option value="videos">Templates4</option>
+                </select>
+                <p>Categories</p>
+                </div>
+                <button class="upload-btn">Dashboard</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <span>
+            <p>Templates > Photos</p>
+        </span>
+        <section class="search-box">
+            <div class="search-content">
+                <h2>Explore Customizable Photos</h2>
+                <p>Explore AI-generated Profile Picture Templates, Video, and Animations</p>
+                <form class="search-form" id="search-form" action="">
+                <div class="search-container">
+                    <!-- Dropdown for selecting Image or Video -->
+                    <select id="search-type">
+                        <option value="photos">Images</option>
+                        <option value="videos">Videos</option>
+                    </select>
+                    <span>|</span>
+                    <!-- Search input field -->
+                    <input type="text" id="search-input" placeholder="Search photos">
+
+                    <!-- Search button -->
+                    <button id="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+            </div>
+        </section>
+
+        <form action="">
+            <div class="filter-bar">
+                <label for="filters"><i class="fa-solid fa-arrow-up-a-z"></i> <strong>Filters:</strong></label>
+
+                <div class="filter">
+                    <select>
+                        <option>Theme</option>
+                        <option>Color</option>
+                        <option>Location</option>
+                        <option>Orientation</option>
+                        <option>Topic</option>
+                        <option>Age</option>
+                        <option>Style</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <select>
+                        <option>Theme</option>
+                        <option>Color</option>
+                        <option>Location</option>
+                        <option>Orientation</option>
+                        <option>Topic</option>
+                        <option>Age</option>
+                        <option>Style</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <select>
+                        <!-- <option>Theme</option> -->
+                        <option>Color</option>
+                        <option>Location</option>
+                        <option>Orientation</option>
+                        <option>Topic</option>
+                        <option>Age</option>
+                        <option>Style</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <select>
+                        <option>Location</option>
+                        <option>Orientation</option>
+                        <option>Topic</option>
+                        <option>Age</option>
+                        <option>Style</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <select>
+                        <option>Orientation</option>
+                        <option>Topic</option>
+                        <option>Age</option>
+                        <option>Style</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <select>
+                        <option>Topic</option>
+                        <option>Age</option>
+                        <option>Style</option>
+                    </select>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+    <main class="container">
+        <div class="image-grid" id="image-grid">
+            <!-- Images will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <div class="popup" id="image-popup">
+        <div class="popup-content">
+            <span class="close-popup" id="close-popup">&times;</span>
+            <!-- sd -->
+            <div class="selected-img">
+                <img src="" alt="Main Image" class="main-image" id="popup-main-image">
+                <div class="img-description">
+                    <div class="heading">Header of the image</div>
+                    <div class="category"><strong>Category:</strong> Poster | <strong>Size:</strong> 800 X 1024 px
+                    </div>
+                    <div class="provider"> by: <img
+                            src="https://designimages.appypie.com/sitefiles/logo-design-dark.svg" alt=""></div>
+                    <button>Use this Template</button>
+                </div>
+            </div>
+            <!-- ḍf -->
+            <div class="tag">
+                <p>Tags:</p>
+                <button>Advertisement</button>
+                <button>Poster</button>
+                <button>Paper</button>
+                <button>Text</button>
+                <button>Brochure</button>
+                <button>Flyer</button>
+            </div>
+            <h2>More like this:</h2>
+            <!-- <img src="" alt="Main Image" class="main-image" id="popup-main-image"> -->
+            <div class="suggested-images" id="suggested-images">
+                <!-- Suggested images will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
